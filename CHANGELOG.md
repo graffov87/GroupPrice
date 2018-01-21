@@ -1,3 +1,8 @@
 0.0.1
 =============
-* Create module:
+* Create empty module
+
+0.1.0
+=============
+* Add models, Apis
+

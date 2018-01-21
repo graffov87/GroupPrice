@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Chervit_GroupPrice::profiles" title="Profiles of Changing Prices" translate="title" module="Chervit_GroupPrice" sortOrder="15" parent="Magento_Backend::system" resource="Chervit_GroupPrice::profiles"/>
+        <add id="Chervit_GroupPrice::profile" title="Profiles" module="Chervit_GroupPrice" sortOrder="10" parent="Chervit_GroupPrice::profiles" action="cher_profile/profile" resource="Chervit_GroupPrice::profile"/>
+    </menu>
+</config>
