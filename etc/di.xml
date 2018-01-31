@@ -2,6 +2,7 @@
 
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="Chervit\GroupPrice\Api\Data\ProfileInterface" type="Chervit\GroupPrice\Model\Profile" />
+    <preference for="Chervit\GroupPrice\Api\ProfileRepositoryInterface" type="Chervit\GroupPrice\Model\ProfileRepository" />
     <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
         <arguments>
             <argument name="collections" xsi:type="array">

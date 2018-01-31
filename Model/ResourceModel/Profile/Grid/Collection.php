@@ -3,8 +3,7 @@
  * @author   : Vitaliy Charnou <graffov87@gmail.com>
  */
 
-namespace Firebear\ImportExport\Model\ResourceModel\ExportJob\Grid;
-
+namespace Chervit\GroupPrice\Model\ResourceModel\Profile\Grid;
 use Magento\Framework\Api\Search\SearchResultInterface;
 use Magento\Framework\Search\AggregationInterface;
 use Chervit\GroupPrice\Model\ResourceModel\Profile\Collection as ProfileCollection;
