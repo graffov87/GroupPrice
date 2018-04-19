@@ -6,7 +6,7 @@
 namespace Chervit\GroupPrice\Block\Adminhtml\Profile\Edit;
 
 use Magento\Backend\Block\Widget\Context;
-use Firebear\ImportExport\Api\JobRepositoryInterface;
+use Chervit\GroupPrice\Api\ProfileRepositoryInterface;
 use Magento\Framework\Exception\NoSuchEntityException;
 
 /**
@@ -20,31 +20,31 @@ class GenericButton
     protected $context;
 
     /**
-     * @var jobRepositoryInterface
+     * @var profileRepositoryInterface
      */
-    protected $jobRepository;
+    protected $profileRepository;
 
     /**
      * GenericButton constructor.
      *
      * @param Context                $context
-     * @param JobRepositoryInterface $jobRepository
+     * @param profileRepositoryInterface $profileRepository
      */
     public function __construct(
         Context $context,
-        jobRepositoryInterface $jobRepository
+        profileRepositoryInterface $profileRepository
     ) {
         $this->context = $context;
-        $this->jobRepository = $jobRepository;
+        $this->profileRepository = $profileRepository;
     }
 
     /**
      * @return null
      */
-    public function getExportJobId()
+    public function getProfileId()
     {
         try {
-            return $this->jobRepository->getById(
+            return $this->profileRepository->getById(
                 $this->context->getRequest()->getParam('entity_id')
             )->getId();
         } catch (NoSuchEntityException $e) {

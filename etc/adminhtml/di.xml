@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Chervit\GroupPrice\Model\Profile\DataProvider">
+        <arguments>
+            <argument name="pool" xsi:type="object">Chervit\GroupPrice\Model\Profile\DataProvider\Modifier\Pool</argument>
+        </arguments>
+    </type>
+    <virtualType name="Chervit\GroupPrice\Model\Profile\DataProvider\Modifier\Pool" type="Magento\Ui\DataProvider\Modifier\Pool">
+        <arguments>
+            <argument name="modifiers" xsi:type="array">
+               <!-- <item name="advancedImport" xsi:type="array">
+                    <item name="class" xsi:type="string">Firebear\ImportExport\Ui\DataProvider\Import\Job\Form\Modifier\AdvancedImport</item>
+                    <item name="sortOrder" xsi:type="number">20</item>
+                </item>-->
+            </argument>
+        </arguments>
+    </virtualType>
+</config>
